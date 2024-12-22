@@ -96,7 +96,7 @@ section {
 
 li::before {
   content: "";
-  background-image: url(/icons8-circle-32.png);
+  background-image: url(img/icons8-circle-32.png);
   background-repeat: no-repeat;
   height: 32px;
   width: 32px;
@@ -128,7 +128,7 @@ li::before {
 }
 
 .checked::before {
-  background-image: url(/icons8-checkmark-32.png);
+  background-image: url(img/icons8-checkmark-32.png);
   height: 32px;
   width: 32px;
 }
@@ -170,13 +170,13 @@ li::before {
     right: 5px;
   }
   li::before {
-    background-image: url(/phone\ un.png);
+    background-image: url(img/phone\ un.png);
     height: 15px;
     width: 15px;
     left: 10px;
   }
   .checked::before {
-    background-image: url(/phone\ check.png);
+    background-image: url(img/phone\ check.png);
     height: 15px;
     width: 15px;
   }
