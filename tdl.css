@@ -13,7 +13,7 @@ section {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  background: linear-gradient(180.57deg, #ff1ff4, #e9802a);
+  background: linear-gradient(139deg, rgba(2,0,36,1) 23%, rgba(238,127,222,1) 50%, rgba(0,0,0,1) 81%);
   background-size: auto;
 }
 
@@ -38,13 +38,13 @@ section {
 }
 
 .data {
-  width: 98%;
+  width: 100%;
   margin-top: 30px;
   /* border: 1px solid white; */
 }
 
 .data input {
-  width: 85.5%;
+  width: 85%;
   height: 20px;
   padding: 10px 20px;
   border-radius: 15px 0 0 15px;
@@ -54,7 +54,7 @@ section {
   letter-spacing: 1.5px;
 }
 .data button {
-  width: 8.9%;
+  width: 10%;
   height: 40px;
   position: absolute;
   border-radius: 0px 10px 10px 0px;
@@ -68,13 +68,10 @@ section {
 }
 
 #task {
-  width: 98%;
-  display: flex;
-  flex-direction: column;
+  width: 100%;
   align-items: center;
   margin-top: 5%;
   max-height: 400px;
-  /* border: 1px solid white; */
 }
 
 #task li {
@@ -84,7 +81,7 @@ section {
   margin-top: 15px;
   padding: 0 75px;
   height: 60px;
-  width: 70%;
+  width: 83%;
   display: flex;
   align-items: center;
   font-family: reg;
@@ -134,26 +131,27 @@ li::before {
 }
 
 @media only screen and (max-width: 400px) {
+  .box {
+    width: 65vw;
+    padding: 40px 30px;
+  }
   .box h1 {
     font-size: 20px;
-    position: absolute;
-    left: 40px;
-    margin-left: 10%;
+    width: 100%;
   }
   .data {
     height: 30px;
-    margin-top: 50px;
-    position: relative;
+    margin-top: 35px;
     left: -40px;
-    width: 160%;
+    width: 100%;
   }
   .data input {
     width: 55%;
-    height: 25px;
+    height: 28px;
     padding: 3px 20px;
   }
   .data button {
-    height: 105%;
+    height: 35px;
     width: 25%;
     font-size: 10px;
     position: absolute;
@@ -162,9 +160,8 @@ li::before {
   #task li {
     font-size: 10px;
     height: 25px;
-    width: 130%;
+    width: 86%;
     padding: 0 0 0 40px;
-    margin-left: 5px;
   }
   #task li span {
     right: 5px;

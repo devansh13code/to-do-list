@@ -15,12 +15,25 @@ function add() {
     span.innerHTML = "\u00d7";
     li.appendChild(span);
   }
+  savedata();
 }
 
-ul.addEventListener("click", function (e){
+ul.addEventListener("click", function (e) {
   if (e.target.tagName === "LI") {
     e.target.classList.toggle("checked");
+    savedata();
   } else if (e.target.tagName === "SPAN") {
     e.target.parentElement.remove();
+    savedata();
+    f;
   }
 });
+
+function savedata() {
+  localStorage.setItem("data", ul.innerHTML);
+}
+
+function showlist() {
+  ul.innerHTML = localStorage.getItem("data");
+}
+showlist();
